@@ -10,6 +10,9 @@
 
 (Нужно вернуть поверхностную копию данных)
 """
+
+
+
 department = {
     "name": "IT",
     "head": "Marina"
@@ -21,10 +24,10 @@ user_data_template = [
     department
 ]
 
+from copy import copy
 
 def copy_list(collection: list) -> list:
-    # TODO вставить код сюда
-    collection_copy = collection
+    collection_copy = copy(collection)
     return collection_copy
 
 
